@@ -971,7 +971,7 @@ p {
         width: 37px;
         height: 100%; /* растягиваем кнопку на всю высоту формы */
         cursor: pointer;
-        background: url(images/go.png) 50% no-repeat;
+        background: url(/img/go.png) 50% no-repeat;
         opacity: 0.6; /* добавляем прозрачность кнопке отправки */
 }
 
