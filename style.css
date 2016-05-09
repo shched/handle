@@ -1,0 +1,1032 @@
+﻿body {
+        background:#ffffe6;
+        color:#ffffff;
+        font-family:arial,sans-serif;
+        font-size:14px;
+        line-height: 175%;
+}
+
+p {
+        margin-bottom: 0.8em;
+} /* для основного текста */
+
+.komment {
+        margin-top: 0.4em;
+        margin-bottom: 1.8em;
+        font-size:12px;
+} /* для комментариев и всего остального, требущего более мелкого шрифта */
+
+.nazvanie {
+        font-size:24px;
+        font-weight: bold;
+        margin-top: 1.6em;
+        margin-bottom: 25px;
+} /* для названий статей и заголовков новостей */
+
+.avtor {
+        margin-top: 30px;
+        margin-bottom: -1.6em;
+        font-size:13px;
+} /* для комментариев и всего остального, требущего более мелкого шрифта */
+
+.zagolovok {
+        font-size:18px;
+        font-weight: normal;
+        margin-top: 25px;
+        margin-bottom: -0.2em;
+} /* для заголовков и всего остального, требущего более крупного и жирного шрифта */
+
+.figr {
+        text-align: right; /* Выравнивание по правому краю */
+} /* для изображения герба */
+
+.figl {
+        text-align: left; /* Выравнивание по левому краю */
+} /* для большинства картинок */
+
+
+
+/* Горизонтальное меню */
+
+*{
+        margin:0;
+        padding:0;
+}
+ 
+ul {
+        font-size: 0.9em;
+        line-height: 100%;
+        text-transform: uppercase; /* Все буквы отображаются прописными */
+        letter-spacing: 0.2em; /* Величина разрядки между буквами */
+        width:100%;
+        display:table;
+        background:#ffffe6;
+        border: 1px solid #ffffe6;
+}
+
+ul li {
+        vertical-align:top; 
+        width:1%; 
+        white-space:nowrap;
+        display:table-cell;
+        padding:10px 0;
+}
+
+ul a {
+        white-space:nowrap;
+}
+
+li.space {
+        width:auto !important;
+        border-right: 1px solid #ffffe6;
+}
+
+li.space+li.space{
+        border-right:none
+}
+
+li:first-child{
+        border-right: none;
+}
+
+
+
+/* Подвал */
+
+.lineika {
+        border-bottom: 1px solid #000000; /* Горизонтальная линейка */
+        opacity: 0.3; /* Величина прозрачности линейки */
+}
+
+.lineika0 {
+        border-bottom: 1px solid #000000;
+        opacity: 0.0;
+} /* Для смещения на 1 пункт (временная мера) */
+
+
+
+/* Ссылки */
+
+A {
+        text-decoration: none; /* Убирает подчеркивание для ссылок */
+}
+
+A:hover {
+        color: red; /* Ссылка красного цвета */
+}
+
+
+
+#page-wrap {
+        width:13%;
+        margin:0 auto;
+        position:relative;
+        left:-6.5%;
+}
+
+#page {
+        width:200%;
+        margin-right:-100%;
+        position:relative;
+        padding: 0px 0;
+        font-size:1.2em;
+}
+
+.column {
+        position:relative;
+        width:50%;
+        margin-right:-50%;
+        height:0px;
+        float:left;
+}
+
+.clear {
+        clear:both;
+        overflow:hidden;
+        font-size:0;
+}
+
+.column1 {
+        left:-100%;
+        /* background:#f6ad11; */
+}
+
+.column2 {
+        left:-50%;
+        /* background:#f6ad11; */
+}
+
+.column3 {
+        left:0;
+        /* background:#f6ad11; */
+}
+
+.column4 {
+        left:50%;
+        /* background:#f6ad11; */
+}
+
+.column5 {
+        left:100%;
+        /* background:#f6ad11; */
+}
+
+.column6 {
+        left:150%;
+        /* background:#f6ad11; */
+}
+
+#content {
+        color:#000;
+        z-index:1;
+}
+
+.incut {
+        margin:0em 0;
+        padding:10px 0;
+        background:#a67c56;
+        background:rgba(166, 124, 86, 0.0);
+        position:relative;
+}
+
+.incut111 {
+        width: 100%;
+}  /* 1-я колонка на 1-й, шириной в 1 */
+
+.incut112 {
+        width: 200%;
+        margin-right:-100%;
+}  /* 1-я колонка на 1-й, шириной в 2 */
+
+.incut113 {
+        width: 300%;
+        margin-right:-200%;
+}  /* 1-я колонка на 1-й, шириной в 3 */
+
+.incut114 {
+        width: 400%;
+        margin-right:-300%;
+}  /* 1-я колонка на 1-й, шириной в 4 */
+
+.incut115 {
+        width: 500%;
+        margin-right:-400%;
+}  /* 1-я колонка на 1-й, шириной в 5 */
+
+.incut116 {
+        width: 600%;
+        margin-right:-500%;
+}  /* 1-я колонка на 1-й, шириной в 6 */
+
+.incut121 {
+        left: 100%;
+        width: 100%;
+}  /* 1-я колонка на 2-й, шириной в 1 */
+
+.incut122 {
+        left: 100%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 1-я колонка на 2-й, шириной в 2 */
+
+.incut123 {
+        left: 100%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 1-я колонка на 2-й, шириной в 3 */
+
+.incut124 {
+        left: 100%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 1-я колонка на 2-й, шириной в 4 */
+
+.incut125 {
+        left: 100%;
+        width: 500%;
+        margin-right:-400%;
+}  /* 1-я колонка на 2-й, шириной в 5 */
+
+.incut131 {
+        left: 200%;
+        width: 100%;
+}  /* 1-я колонка на 3-й, шириной в 1 */
+
+.incut132 {
+        left: 200%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 1-я колонка на 3-й, шириной в 2 */
+
+.incut133 {
+        left: 200%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 1-я колонка на 3-й, шириной в 3 */
+
+.incut134 {
+        left: 200%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 1-я колонка на 3-й, шириной в 4 */
+
+.incut141 {
+        left: 300%;
+        width: 100%;
+}  /* 1-я колонка на 4-й, шириной в 1 */
+
+.incut142 {
+        left: 300%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 1-я колонка на 4-й, шириной в 2 */
+
+.incut143 {
+        left: 300%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 1-я колонка на 4-й, шириной в 3 */
+
+.incut151 {
+        left: 400%;
+        width: 100%;
+}  /* 1-я колонка на 5-й, шириной в 1 */
+
+.incut152 {
+        left: 400%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 1-я колонка на 5-й, шириной в 2 */
+
+.incut161 {
+        left: 500%;
+        width: 100%;
+}  /* 1-я колонка на 6-й, шириной в 1 */
+
+.incut211 {
+        left:-100%;
+        width: 100%;
+}  /* 2-я колонка на 1-й, шириной в 1 */
+
+.incut212 {
+        left:-100%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 2-я колонка на 1-й, шириной в 2 */
+
+.incut213 {
+        left:-100%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 2-я колонка на 1-й, шириной в 3 */
+
+.incut214 {
+        left:-100%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 2-я колонка на 1-й, шириной в 4 */
+
+.incut215 {
+        left:-100%;
+        width: 500%;
+        margin-right:-400%;
+}  /* 2-я колонка на 1-й, шириной в 5 */
+
+.incut216 {
+        left:-100%;
+        width: 600%;
+        margin-right:-500%;
+}  /* 2-я колонка на 1-й, шириной в 6 */
+
+.incut221 {
+        width: 100%;
+}  /* 2-я колонка на 2-й, шириной в 1 */
+
+.incut222 {
+        width: 200%;
+        margin-right:-100%;
+}  /* 2-я колонка на 2-й, шириной в 2 */
+
+.incut223 {
+        width: 300%;
+        margin-right:-200%;
+}  /* 2-я колонка на 2-й, шириной в 3 */
+
+.incut224 {
+        width: 400%;
+        margin-right:-300%;
+}  /* 2-я колонка на 2-й, шириной в 4 */
+
+.incut225 {
+        width: 500%;
+        margin-right:-400%;
+}  /* 2-я колонка на 2-й, шириной в 5 */
+
+.incut231 {
+        left: 100%;
+        width: 100%;
+}  /* 2-я колонка на 3-й, шириной в 1 */
+
+.incut232 {
+        left: 100%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 2-я колонка на 3-й, шириной в 2 */
+
+.incut233 {
+        left: 100%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 2-я колонка на 3-й, шириной в 3 */
+
+.incut234 {
+        left: 100%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 2-я колонка на 3-й, шириной в 4 */
+
+.incut241 {
+        left: 200%;
+        width: 100%;
+}  /* 2-я колонка на 4-й, шириной в 1 */
+
+.incut242 {
+        left: 200%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 2-я колонка на 4-й, шириной в 2 */
+
+.incut243 {
+        left: 200%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 2-я колонка на 4-й, шириной в 3 */
+
+.incut251 {
+        left: 300%;
+        width: 100%;
+}  /* 2-я колонка на 5-й, шириной в 1 */
+
+.incut252 {
+        left: 300%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 2-я колонка на 5-й, шириной в 2 */
+
+.incut261 {
+        left: 400%;
+        width: 100%;
+}  /* 2-я колонка на 6-й, шириной в 1 */
+
+.incut311 {
+        left:-200%;
+        width: 100%;
+}  /* 3-я колонка на 1-й, шириной в 1 */
+
+.incut312 {
+        left:-200%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 3-я колонка на 1-й, шириной в 2 */
+
+.incut313 {
+        left:-200%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 3-я колонка на 1-й, шириной в 3 */
+
+.incut314 {
+        left:-200%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 3-я колонка на 1-й, шириной в 4 */
+
+.incut315 {
+        left:-200%;
+        width: 500%;
+        margin-right:-400%;
+}  /* 3-я колонка на 1-й, шириной в 5 */
+
+.incut316 {
+        left:-200%;
+        width: 600%;
+        margin-right:-500%;
+}  /* 3-я колонка на 1-й, шириной в 6 */
+
+.incut321 {
+        left:-100%;
+        width: 100%;
+}  /* 3-я колонка на 2-й, шириной в 1 */
+
+.incut322 {
+        left:-100%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 3-я колонка на 2-й, шириной в 2 */
+
+.incut323 {
+        left:-100%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 3-я колонка на 2-й, шириной в 3 */
+
+.incut324 {
+        left:-100%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 3-я колонка на 2-й, шириной в 4 */
+
+.incut325 {
+        left:-100%;
+        width: 500%;
+        margin-right:-400%;
+}  /* 3-я колонка на 2-й, шириной в 5 */
+
+.incut331 {
+        width: 100%;
+}  /* 3-я колонка на 3-й, шириной в 1 */
+
+.incut332 {
+        width: 200%;
+        margin-right:-100%;
+}  /* 3-я колонка на 3-й, шириной в 2 */
+
+.incut333 {
+        width: 300%;
+        margin-right:-200%;
+}  /* 3-я колонка на 3-й, шириной в 3 */
+
+.incut334 {
+        width: 400%;
+        margin-right:-300%;
+}  /* 3-я колонка на 3-й, шириной в 4 */
+
+.incut341 {
+        left: 100%;
+        width: 100%;
+}  /* 3-я колонка на 4-й, шириной в 1 */
+
+.incut342 {
+        left: 100%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 3-я колонка на 4-й, шириной в 2 */
+
+.incut343 {
+        left: 100%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 3-я колонка на 4-й, шириной в 3 */
+
+.incut351 {
+        left: 200%;
+        width: 100%;
+}  /* 3-я колонка на 5-й, шириной в 1 */
+
+.incut352 {
+        left: 200%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 3-я колонка на 5-й, шириной в 2 */
+
+.incut361 {
+        left: 300%;
+        width: 100%;
+}  /* 3-я колонка на 6-й, шириной в 1 */
+
+.incut411 {
+        left:-300%;
+        width: 100%;
+}  /* 4-я колонка на 1-й, шириной в 1 */
+
+.incut412 {
+        left:-300%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 4-я колонка на 1-й, шириной в 2 */
+
+.incut413 {
+        left:-300%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 4-я колонка на 1-й, шириной в 3 */
+
+.incut414 {
+        left:-300%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 4-я колонка на 1-й, шириной в 4 */
+
+.incut415 {
+        left:-300%;
+        width: 500%;
+        margin-right:-400%;
+}  /* 4-я колонка на 1-й, шириной в 5 */
+
+.incut416 {
+        left:-300%;
+        width: 600%;
+        margin-right:-500%;
+}  /* 4-я колонка на 1-й, шириной в 6 */
+
+.incut421 {
+        left:-200%;
+        width: 100%;
+}  /* 4-я колонка на 2-й, шириной в 1 */
+
+.incut422 {
+        left:-200%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 4-я колонка на 2-й, шириной в 2 */
+
+.incut423 {
+        left:-200%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 4-я колонка на 2-й, шириной в 3 */
+
+.incut424 {
+        left:-200%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 4-я колонка на 2-й, шириной в 4 */
+
+.incut425 {
+        left:-200%;
+        width: 500%;
+        margin-right:-400%;
+}  /* 4-я колонка на 2-й, шириной в 5 */
+
+.incut431 {
+        left:-100%;
+        width: 100%;
+}  /* 4-я колонка на 3-й, шириной в 1 */
+
+.incut432 {
+        left:-100%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 4-я колонка на 3-й, шириной в 2 */
+
+.incut433 {
+        left:-100%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 4-я колонка на 3-й, шириной в 3 */
+
+.incut434 {
+        left:-100%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 4-я колонка на 3-й, шириной в 4 */
+
+.incut441 {
+        width: 100%;
+}  /* 4-я колонка на 4-й, шириной в 1 */
+
+.incut442 {
+        width: 200%;
+        margin-right:-100%;
+}  /* 4-я колонка на 4-й, шириной в 2 */
+
+.incut443 {
+        width: 300%;
+        margin-right:-200%;
+}  /* 4-я колонка на 4-й, шириной в 3 */
+
+.incut451 {
+        left: 100%;
+        width: 100%;
+}  /* 4-я колонка на 5-й, шириной в 1 */
+
+.incut452 {
+        left: 100%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 4-я колонка на 5-й, шириной в 2 */
+
+.incut461 {
+        left: 200%;
+        width: 100%;
+}  /* 4-я колонка на 6-й, шириной в 1 */
+
+.incut511 {
+        left:-400%;
+        width: 100%;
+}  /* 5-я колонка на 1-й, шириной в 1 */
+
+.incut512 {
+        left:-400%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 5-я колонка на 1-й, шириной в 2 */
+
+.incut513 {
+        left:-400%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 5-я колонка на 1-й, шириной в 3 */
+
+.incut514 {
+        left:-400%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 5-я колонка на 1-й, шириной в 4 */
+
+.incut515 {
+        left:-400%;
+        width: 500%;
+        margin-right:-400%;
+}  /* 5-я колонка на 1-й, шириной в 5 */
+
+.incut516 {
+        left:-400%;
+        width: 600%;
+        margin-right:-500%;
+}  /* 5-я колонка на 1-й, шириной в 6 */
+
+.incut521 {
+        left:-300%;
+        width: 100%;
+}  /* 5-я колонка на 2-й, шириной в 1 */
+
+.incut522 {
+        left:-300%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 5-я колонка на 2-й, шириной в 2 */
+
+.incut523 {
+        left:-300%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 5-я колонка на 2-й, шириной в 3 */
+
+.incut524 {
+        left:-300%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 5-я колонка на 2-й, шириной в 4 */
+
+.incut525 {
+        left:-300%;
+        width: 500%;
+        margin-right:-400%;
+}  /* 5-я колонка на 2-й, шириной в 5 */
+
+.incut531 {
+        left:-200%;
+        width: 100%;
+}  /* 5-я колонка на 3-й, шириной в 1 */
+
+.incut532 {
+        left:-200%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 5-я колонка на 3-й, шириной в 2 */
+
+.incut533 {
+        left:-200%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 5-я колонка на 3-й, шириной в 3 */
+
+.incut534 {
+        left:-200%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 5-я колонка на 3-й, шириной в 4 */
+
+.incut541 {
+        left:-100%;
+        width: 100%;
+}  /* 5-я колонка на 4-й, шириной в 1 */
+
+.incut542 {
+        left:-100%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 5-я колонка на 4-й, шириной в 2 */
+
+.incut543 {
+        left:-100%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 5-я колонка на 4-й, шириной в 3 */
+
+.incut551 {
+        width: 100%;
+}  /* 5-я колонка на 5-й, шириной в 1 */
+
+.incut552 {
+        width: 200%;
+        margin-right:-100%;
+}  /* 5-я колонка на 5-й, шириной в 2 */
+
+.incut561 {
+        left: 100%;
+        width: 100%;
+}  /* 5-я колонка на 6-й, шириной в 1 */
+
+.incut611 {
+        left:-500%;
+        width: 100%;
+}  /* 6-я колонка на 1-й, шириной в 1 */
+
+.incut612 {
+        left:-500%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 6-я колонка на 1-й, шириной в 2 */
+
+.incut613 {
+        left:-500%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 6-я колонка на 1-й, шириной в 3 */
+
+.incut614 {
+        left:-500%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 6-я колонка на 1-й, шириной в 4 */
+
+.incut615 {
+        left:-500%;
+        width: 500%;
+        margin-right:-400%;
+}  /* 6-я колонка на 1-й, шириной в 5 */
+
+.incut616 {
+        left:-500%;
+        width: 600%;
+        margin-right:-500%;
+}  /* 6-я колонка на 1-й, шириной в 6 */
+
+.incut621 {
+        left:-400%;
+        width: 100%;
+}  /* 6-я колонка на 2-й, шириной в 1 */
+
+.incut622 {
+        left:-400%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 6-я колонка на 2-й, шириной в 2 */
+
+.incut623 {
+        left:-400%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 6-я колонка на 2-й, шириной в 3 */
+
+.incut624 {
+        left:-400%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 6-я колонка на 2-й, шириной в 4 */
+
+.incut625 {
+        left:-400%;
+        width: 500%;
+        margin-right:-400%;
+}  /* 6-я колонка на 2-й, шириной в 5 */
+
+.incut631 {
+        left:-300%;
+        width: 100%;
+}  /* 6-я колонка на 3-й, шириной в 1 */
+
+.incut632 {
+        left:-300%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 6-я колонка на 3-й, шириной в 2 */
+
+.incut633 {
+        left:-300%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 6-я колонка на 3-й, шириной в 3 */
+
+.incut634 {
+        left:-300%;
+        width: 400%;
+        margin-right:-300%;
+}  /* 6-я колонка на 3-й, шириной в 4 */
+
+.incut641 {
+        left:-200%;
+        width: 100%;
+}  /* 6-я колонка на 4-й, шириной в 1 */
+
+.incut642 {
+        left:-200%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 6-я колонка на 4-й, шириной в 2 */
+
+.incut643 {
+        left:-200%;
+        width: 300%;
+        margin-right:-200%;
+}  /* 6-я колонка на 4-й, шириной в 3 */
+
+.incut651 {
+        left:-100%;
+        width: 100%;
+}  /* 5-я колонка на 5-й, шириной в 1 */
+
+.incut652 {
+        left:-100%;
+        width: 200%;
+        margin-right:-100%;
+}  /* 6-я колонка на 5-й, шириной в 2 */
+
+.incut661 {
+        width: 100%;
+}  /* 6-я колонка на 6-й, шириной в 1 */
+
+
+
+/* Висячая пунктуация */
+
+.spla {
+        margin-right: 0.34em
+}
+
+.lapka {
+        margin-left: -0.34em;
+        display: inline-block
+} /* <span class="spla"> </span><span class="lapka">“слово</span> */
+
+.spsk {
+        margin-right: 0.32em
+}
+
+.skobka {
+        margin-left: -0.32em;
+        display: inline-block
+} /* <span class="spsk"> </span><span class="skobka">(слово</span> */
+
+.spelk {
+        margin-right: 0.54em
+}
+
+.elka {
+        margin-left: -0.54em;
+        display: inline-block
+} /* <span class="spelk"> </span><span class="elka">«слово</span> */
+
+
+
+/* Для текста с переносами:
+
+p {
+        text-align: justify;
+        word-spacing: -0.3ex;
+} */
+
+
+
+/* Поиск по сайту */
+
+.search {
+        width: 100%; /* Ширина формы */
+        position: relative; /* Позиционирование формы отправки */
+}
+
+.search input {
+        border: 0px solid #696969; /* Границы формы */
+}
+
+/* стили для поля ввода */
+.search .input {
+        width: 100%; /* растягиваем поле ввода на всю ширину формы */
+        padding: 8px 37px 9px 15px; /* за счет верхнего (8px) и нижнего (9px) внутренних отступов регулируем высоту формы
+                                     ** внутренний отступ справа (37px) делаем больше левого, т.к. там будет размещена кнопка отправки */
+        -moz-box-sizing: border-box;
+        box-sizing: border-box; /* чтобы ширина поля ввода (100%) включала в себя внутренние отступы */
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.0), inset 0 1px 2px rgba(0,0,0,0.0); /* Внутренние тени */
+        border-radius: 0px; /* Закругление углов */
+        background: #ffffff;
+        font: 13px Arial, sans-serif;
+        color: #000000;
+        outline: none;
+        opacity: 0.8;
+}
+
+.search .input:focus {
+        box-shadow: inset 0 0 5px rgba(0,0,0,0.0), inset 0 1px 2px rgba(0,0,0,0.0);
+        background: #ffffff;
+        color: #000000;
+        opacity: 1.0;
+} /* меняем оформление поля ввода при фокусе */
+
+.search .submit { /* оформляем кнопку отправки */
+        position: absolute;  /* позиционируем кнопку абсолютно от правого края формы */
+        top: 0;
+        right: 0;
+        width: 37px;
+        height: 100%; /* растягиваем кнопку на всю высоту формы */
+        cursor: pointer;
+        background: url(images/go.png) 50% no-repeat;
+        opacity: 0.6; /* добавляем прозрачность кнопке отправки */
+}
+
+.search .submit:hover {
+        opacity: 0.8;
+} /* при наведении курсора меняем прозрачность кнопки отправки */
+
+input[type="search"] {
+        -webkit-appearance: none;
+} /* данное свойство необходимо для того, чтобы в браузерах Chrome и Safari можно было стилизовать инпуты */
+
+
+/* задаем отдельные стили для браузеров IE ниже 9-й версии */
+*+html .search {
+        width: 28%;
+        padding: 0 52px 0 0;
+} /* для IE7 подгоняем ширину под другие браузеры и добавляем правый внутренний отступ, чтобы кнопка отправки встала на свое место */
+
+.search .input {
+        border: 1px solid #000000;
+        padding-top: 7px;
+        padding-bottom: 8px;
+        opacity: 0.3;
+}
+
+.search .input:focus {
+        border: 1px solid #696969;
+        opacity: 1.0;
+}
+
+.search .submit {
+        filter: alpha(opacity=50);
+}
+
+.search .submit:hover {
+        filter: alpha(opacity=80);
+}
+
+
+
+/* Растягивает видео на всю ширину фрейма */
+
+.videoWrapper {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+}
+
+.videoWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+}
