@@ -1,0 +1,4 @@
+﻿User-agent: *
+Disallow: /cgi-bin/
+Disallow: /images/
+Disallow: /fotorama-4.6.4/
