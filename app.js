@@ -41,6 +41,12 @@ app.get('/err404', function(req, res){    // Обрабатываем запро
     res.render('err404.html');
 });
 
+var connect = require("connect");
+
+var app = connect.createServer().use(connect.static(__dirname + '/public'));
+
+app.listen(port);
+
 var port = process.env.PORT || 5000;       
 app.listen(port)                           // Запускаем сервер на 5000 порту, если не указана переменная окружения "port" 
 console.log("Listening at " + port)        // Пишем в консоль, что запустились
