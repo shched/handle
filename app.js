@@ -41,6 +41,18 @@ app.get('/err404', function(req, res){    // Обрабатываем запро
     res.render('err404.html');
 });
 
+app.get('/mathmanship', function(req, res){    // Обрабатываем запрос страницы "/mathmanship"
+    res.render('mathmanship.html');
+});
+
+app.get('/reader-of-scientific-articles', function(req, res){    // Обрабатываем запрос страницы "/reader-of-scientific-articles"
+    res.render('reader-of-scientific-articles.html');
+});
+
+app.get('/player', function(req, res){    // Обрабатываем запрос страницы "/player"
+    res.render('player.html');
+});
+
 var port = process.env.PORT || 5000;
 app.listen(port)    // Запускаем сервер на 5000 порту, если не указана переменная окружения "port" 
 console.log("Listening at " + port)    // Пишем в консоль, что запустились
