@@ -882,37 +882,6 @@ A:hover {
 
 
 
-/* Висячая пунктуация */
-
-.spla {
-        margin-right: 0.34em
-}
-
-.lapka {
-        margin-left: -0.34em;
-        display: inline-block
-} /* <span class="spla"> </span><span class="lapka">“слово</span> */
-
-.spsk {
-        margin-right: 0.32em
-}
-
-.skobka {
-        margin-left: -0.32em;
-        display: inline-block
-} /* <span class="spsk"> </span><span class="skobka">(слово</span> */
-
-.spelk {
-        margin-right: 0.54em
-}
-
-.elka {
-        margin-left: -0.54em;
-        display: inline-block
-} /* <span class="spelk"> </span><span class="elka">«слово</span> */
-
-
-
 /* Для текста с переносами:
 
 p {
@@ -1000,6 +969,27 @@ input[type="search"] {
 
 .search .submit:hover {
         filter: alpha(opacity=80);
+}
+
+
+
+/* Растягивает картинку на всю ширину фрейма */
+
+.imgWrapper {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 */
+        padding-top: 25px;
+        height: 0;
+}
+
+.imgWrapper iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
 }
 
 
