@@ -48,14 +48,14 @@ p {
 
 /* Горизонтальное меню */
 
-.tufte_navbar {
+.navbar {
 	font-family: 'GillSans', 'Gill Sans MT', 'Gill Sans', 'Trebuchet MS', sans-serif;
 	font-size: 12px;
 	font-stretch: normal;
 	font-style: normal;
 	font-variant: normal;
 	font-weight: 400;
-	letter-spacing:	 0.08em;
+	letter-spacing:	 0.1em;
 	line-height: 14px;
 	margin-bottom: 0px;
 	margin-left: 0px;
@@ -66,19 +66,19 @@ p {
 	padding-top: 0px;
 	text-decoration: none;
 	text-indent: 0px;
-	text-transform: none;
+	text-transform: uppercase;
 }
 
-a.tufte_navbar_a {
+a.navbar_a {
    	color: rgb(66, 66, 66);
 	text-decoration: none;
 }
 
-a.tufte_navbar_a:visited {
+a.navbar_a:visited {
 	color: rgb(66, 66, 66);
 }
 
-a.tufte_navbar_a:hover {
+a.navbar_a:hover {
 	color: rgb(220, 45, 21);
 }
 
