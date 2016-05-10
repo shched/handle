@@ -70,16 +70,16 @@ p {
 }
 
 a.navbar_a {
-   	color: rgb(66, 66, 66);
+   	color: #0000ff;
 	text-decoration: none;
 }
 
 a.navbar_a:visited {
-	color: rgb(66, 66, 66);
+	color: rgb(69, 69, 69);
 }
 
 a.navbar_a:hover {
-	color: rgb(220, 45, 21);
+	color:  #ff0000;
 }
 
 
