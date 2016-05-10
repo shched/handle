@@ -41,15 +41,15 @@ app.get('/err404', function(req, res){    // Обрабатываем запро
     res.render('err404.html');
 });
 
-app.get('/mathmanship', function(req, res){    // Обрабатываем запрос страницы "/mathmanship"
+app.get('/news/mathmanship', function(req, res){    // Обрабатываем запрос страницы "/mathmanship"
     res.render('mathmanship.html');
 });
 
-app.get('/reader-of-scientific-articles', function(req, res){    // Обрабатываем запрос страницы "/reader-of-scientific-articles"
+app.get('/news/reader-of-scientific-articles', function(req, res){    // Обрабатываем запрос страницы "/reader-of-scientific-articles"
     res.render('reader-of-scientific-articles.html');
 });
 
-app.get('/player', function(req, res){    // Обрабатываем запрос страницы "/player"
+app.get('/news/player', function(req, res){    // Обрабатываем запрос страницы "/player"
     res.render('player.html');
 });
 
