@@ -46,11 +46,11 @@ app.get('/news/mathmanship', function(req, res){    // Обрабатываем 
 });
 
 app.get('/news/reader-of-scientific-articles', function(req, res){    // Обрабатываем запрос страницы "/reader-of-scientific-articles"
-    res.render('reader-of-scientific-articles.html');
+    res.render('news/reader-of-scientific-articles.html');
 });
 
 app.get('/news/player', function(req, res){    // Обрабатываем запрос страницы "/player"
-    res.render('player.html');
+    res.render('news/player.html');
 });
 
 var port = process.env.PORT || 5000;
