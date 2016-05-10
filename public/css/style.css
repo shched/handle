@@ -75,11 +75,11 @@ a.navbar_a {
 }
 
 a.navbar_a:visited {
-	color: rgb(69, 69, 69);
+	color: #800080;
 }
 
 a.navbar_a:hover {
-	color:  #ff0000;
+	color: #ff0000;
 }
 
 
