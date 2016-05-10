@@ -37,10 +37,6 @@ app.get('/about', function(req, res){    // Обрабатываем запро�
     res.render('about.html');
 });
 
-app.get('/err404', function(req, res){    // Обрабатываем запрос страницы "/err404"
-    res.render('err404.html');
-});
-
 app.get('/news/mathmanship', function(req, res){    // Обрабатываем запрос страницы "/mathmanship"
     res.render('news/mathmanship.html');
 });
