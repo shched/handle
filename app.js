@@ -45,8 +45,8 @@ app.get('/news/reader-of-scientific-articles', function(req, res){    // Обр�
     res.render('news/reader-of-scientific-articles.html');
 });
 
-app.get('/news/player', function(req, res){    // Обрабатываем запрос страницы "/player"
-    res.render('news/player.html');
+app.get('/news/worlds-fair', function(req, res){    // Обрабатываем запрос страницы "/worlds-fair"
+    res.render('news/worlds-fair.html');
 });
 
 var port = process.env.PORT || 5000;
