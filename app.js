@@ -42,7 +42,7 @@ app.get('/err404', function(req, res){    // Обрабатываем запро
 });
 
 app.get('/news/mathmanship', function(req, res){    // Обрабатываем запрос страницы "/mathmanship"
-    res.render('mathmanship.html');
+    res.render('news/mathmanship.html');
 });
 
 app.get('/news/reader-of-scientific-articles', function(req, res){    // Обрабатываем запрос страницы "/reader-of-scientific-articles"
