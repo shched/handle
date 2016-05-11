@@ -1,84 +1,68 @@
 ﻿body {
-        background:#ffffe6;
-        color:#ffffff;
-        font-family:arial,sans-serif;
-        font-size:13px;
-        line-height: 24px;
+	background:#ffffe6;
+	color:#ffffff;
+	font-family:arial,sans-serif;
+	font-size:13px;
+	line-height: 24px;
 }
 
 p {
-        margin-bottom: 0.8em;
+	margin-bottom: 0.8em;
 } /* для основного текста */
 
 .komment {
-        margin-top: 0.4em;
-        margin-bottom: 1.8em;
-        font-size:12px;
+	margin-top: 0.4em;
+	margin-bottom: 1.8em;
+	font-size:12px;
 } /* для комментариев и всего остального, требущего более мелкого шрифта */
 
 .nazvanie {
-        font-size:24px;
-        font-weight: bold;
-        margin-top: 1.6em;
-        margin-bottom: 25px;
+	font-size:24px;
+	font-weight: bold;
+	margin-top: 1.6em;
+	margin-bottom: 25px;
 } /* для названий статей и заголовков новостей */
 
 .avtor {
-        margin-top: 30px;
-        margin-bottom: -1.6em;
-        font-size:13px;
+	margin-top: 30px;
+	margin-bottom: -1.6em;
+	font-size:13px;
 } /* для комментариев и всего остального, требущего более мелкого шрифта */
 
 .zagolovok {
-        font-size:18px;
-        font-weight: normal;
-        margin-top: 25px;
-        margin-bottom: -0.2em;
+	font-size:18px;
+	font-weight: normal;
+	margin-top: 25px;
+	margin-bottom: -0.2em;
 } /* для заголовков и всего остального, требущего более крупного и жирного шрифта */
 
 .figr {
-        text-align: right; /* Выравнивание по правому краю */
+	text-align: right; /* Выравнивание по правому краю */
 } /* для изображения герба */
 
 .figl {
-        text-align: left; /* Выравнивание по левому краю */
+	text-align: left; /* Выравнивание по левому краю */
 } /* для большинства картинок */
 
 
 
 /* Горизонтальное меню */
 
-.navbar {
-	font-size: 14px;
-	font-stretch: normal;
-	font-style: normal;
-	font-variant: normal;
-	font-weight: 400;
-	letter-spacing:	 0.2em;
-	line-height: 14px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top: 0px;
-	opacity: 1.00;
-	padding-bottom: 0px;
-	padding-top: 0px;
-	text-decoration: none;
-	text-indent: 0px;
+#menu{
+	font-family: sans-serif;
+	position: relative;
 	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing:	 0.2em;
 }
 
-a.navbar_a {
-   	color: #0000ff;
-	text-decoration: none;
+.wf-active #menu{
+	font-family: sans-serif;
 }
 
-a.navbar_a:visited {
-	color: #800080;
-}
-
-a.navbar_a:hover {
-	color: #ff0000;
+a.branches, span.current{
+	padding: 0;
+	line-height: 22px;
 }
 
 
@@ -86,13 +70,13 @@ a.navbar_a:hover {
 /* Подвал */
 
 .lineika {
-        border-bottom: 1px solid #000000; /* Горизонтальная линейка */
-        opacity: 0.3; /* Величина прозрачности линейки */
+	border-bottom: 1px solid #000000; /* Горизонтальная линейка */
+	opacity: 0.3; /* Величина прозрачности линейки */
 }
 
 .lineika0 {
-        border-bottom: 1px solid #000000;
-        opacity: 0.0;
+	border-bottom: 1px solid #000000;
+	opacity: 0.0;
 } /* Для смещения на 1 пункт (временная мера) */
 
 
@@ -100,42 +84,42 @@ a.navbar_a:hover {
 /* Ссылки */
 
 A {
-        text-decoration: none; /* Убирает подчеркивание для ссылок */
+	text-decoration: none; /* Убирает подчеркивание для ссылок */
 }
 
 A:hover {
-        color: red; /* Ссылка красного цвета */
+	color: red; /* Ссылка красного цвета */
 }
 
 
 
 #page-wrap {
-        width:13%;
-        margin:0 auto;
-        position:relative;
-        left:-6.5%;
+	width:13%;
+	margin:0 auto;
+	position:relative;
+	left:-6.5%;
 }
 
 #page {
-        width:200%;
-        margin-right:-100%;
-        position:relative;
-        padding: 0px 0;
-        font-size:1.2em;
+	width:200%;
+	margin-right:-100%;
+	position:relative;
+	padding: 0px 0;
+	font-size:1.2em;
 }
 
 .column {
-        position:relative;
-        width:50%;
-        margin-right:-50%;
-        height:0px;
-        float:left;
+	position:relative;
+	width:50%;
+	margin-right:-50%;
+	height:0px;
+	float:left;
 }
 
 .clear {
-        clear:both;
-        overflow:hidden;
-        font-size:0;
+	clear:both;
+	overflow:hidden;
+	font-size:0;
 }
 
 .column1 {
