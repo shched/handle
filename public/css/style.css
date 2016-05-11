@@ -48,21 +48,42 @@ p {
 
 /* Горизонтальное меню */
 
-#menu{
-	font-family: sans-serif;
+.floats {
+	margin: 0 0 0 0; /* Компенсируем отступы между float-блоками, чтобы они занимали все доступное пространство */
+
+/* Эти правила для IE */
 	position: relative;
-	text-transform: uppercase;
-	font-size: 14px;
-	letter-spacing:	 0.2em;
+	display: inline-block;
+	clear: both;
 }
 
-.wf-active #menu{
-	font-family: sans-serif;
+.floats:after {
+	content: '';
+	display: block;
+	clear: both;
 }
 
-a.branches, span.current{
-	padding: 0;
-	line-height: 22px;
+.floats .left {
+	position: relative;
+	float: left;
+	display: inline; /* Убираем удвоение отступов в IE */
+	overflow: hidden; /* Прячем все, что вдруг вылезло за наши ограничения */
+	margin: 0 0 0 0; /* Отсупы между float-блоками */
+	width: 10em; /* Задаем минимальную ширину по тексту */
+	min-width: 0px; /* Задаем минимальную ширину по картинке */
+}
+
+.floats .left .r {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+.floats .left .min {
+	margin: 0 0 0 0; /* Задаем минимальную высоту по картинке */
+	height: 2em; /* Задаем минимальную высоту по тексту */
+	width: 0px; /* Дублируем значение минимальной ширины по картинке для IE */
 }
 
 
