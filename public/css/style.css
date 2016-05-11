@@ -50,6 +50,8 @@ p {
 
 .floats {
 	margin: 0 0 0 0; /* Компенсируем отступы между float-блоками, чтобы они занимали все доступное пространство */
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
 
 /* Эти правила для IE */
 	position: relative;
