@@ -958,7 +958,7 @@ input[type="search"] {
 } /* для IE7 подгоняем ширину под другие браузеры и добавляем правый внутренний отступ, чтобы кнопка отправки встала на свое место */
 
 .search .input {
-        border: 1px solid #000000;
+        border: 1px solid #696969;
         padding-top: 7px;
         padding-bottom: 8px;
         opacity: 1.0;
