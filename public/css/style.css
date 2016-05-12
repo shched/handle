@@ -939,7 +939,7 @@ p {
         height: 100%; /* растягиваем кнопку на всю высоту формы */
         cursor: pointer;
         background: url(/img/go.png) 50% no-repeat;
-        opacity: 0.6; /* добавляем прозрачность кнопке отправки */
+        opacity: 0.3; /* добавляем прозрачность кнопке отправки */
 }
 
 .search .submit:hover {
