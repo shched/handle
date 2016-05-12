@@ -944,7 +944,7 @@ p {
 }
 
 .search .submit:hover {
-        opacity: 0.8;
+        opacity: 1.0;
 } /* при наведении курсора меняем прозрачность кнопки отправки */
 
 input[type="search"] {
