@@ -1,8 +1,8 @@
 ﻿body {
-	background:#ffffe6;
-	color:#ffffff;
-	font-family:arial,sans-serif;
-	font-size:13px;
+	background: #ffffe6;
+	color: #ffffff;
+	font-family: arial, sans-serif;
+	font-size: 13px;
 	line-height: 24px;
 }
 
@@ -13,11 +13,11 @@ p {
 .komment {
 	margin-top: 0.4em;
 	margin-bottom: 1.8em;
-	font-size:12px;
+	font-size: 12px;
 } /* для комментариев и всего остального, требущего более мелкого шрифта */
 
 .nazvanie {
-	font-size:24px;
+	font-size: 24px;
 	font-weight: bold;
 	margin-top: 1.6em;
 	margin-bottom: 25px;
@@ -26,7 +26,7 @@ p {
 .avtor {
 	margin-top: 30px;
 	margin-bottom: -1.6em;
-	font-size:13px;
+	font-size: 13px;
 } /* для комментариев и всего остального, требущего более мелкого шрифта */
 
 .zagolovok {
@@ -939,7 +939,7 @@ p {
         height: 100%; /* растягиваем кнопку на всю высоту формы */
         cursor: pointer;
         background: url(/img/go.png) 50% no-repeat;
-        opacity: 0.3; /* добавляем прозрачность кнопке отправки */
+        opacity: 1.0; /* добавляем прозрачность кнопке отправки */
 }
 
 .search .submit:hover {
