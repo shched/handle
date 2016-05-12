@@ -13,6 +13,10 @@ app.get('/', function(req, res){    // Обрабатываем запрос к�
     res.render('index.html');
 });
 
+app.get('/comments', function(req, res){    // Обрабатываем запрос страницы "/comments"
+    res.render('comments.html');
+});
+
 app.get('/history', function(req, res){    // Обрабатываем запрос страницы "/history"
     res.render('history.html');
 });
