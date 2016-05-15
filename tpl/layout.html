@@ -67,29 +67,29 @@
 		</nav>
 		<%=body%>
 		<script>
-var nav = document.getElementsByTagName('nav');
-mynav();
-function mynav() {
-  if (800 >= document.documentElement.clientWidth) {
-    nav[0].children[0].style.display = 'none';
-    nav[0].onclick = function(e) {
-      if (e.target != this) { return true; }
-      this.children[0].style.display = this.children[0].style.display === 'none' ? 'block' : 'none';
-    }
-  }
-}
-window.onresize = function() {
-  mynav();
-  if (800 < document.documentElement.clientWidth) {
-    nav[0].children[0].style.display = 'block';
-  }
-}
-</script>
-<div style="clear:both; padding-bottom:0.25em">
-</div>
-<script type="text/javascript" src="https://www.blogger.com/static/v1/common/js/845978816-csitail.js">
-</script>
-<script type="text/javascript">BLOG_initCsi('classic_blogspot');
-</script>
+			var nav = document.getElementsByTagName('nav');
+			mynav();
+			function mynav() {
+				if (800 >= document.documentElement.clientWidth) {
+					nav[0].children[0].style.display = 'none';
+					nav[0].onclick = function(e) {
+						if (e.target != this) { return true; }
+						this.children[0].style.display = this.children[0].style.display === 'none' ? 'block' : 'none';
+					}
+				}
+			}
+			window.onresize = function() {
+				mynav();
+				if (800 < document.documentElement.clientWidth) {
+					nav[0].children[0].style.display = 'block';
+				}
+			}
+		</script>
+		<div style="clear:both; padding-bottom:0.25em">
+		</div>
+		<script type="text/javascript" src="https://www.blogger.com/static/v1/common/js/845978816-csitail.js">
+		</script>
+		<script type="text/javascript">BLOG_initCsi('classic_blogspot');
+		</script>
 	</body>
 </html>
