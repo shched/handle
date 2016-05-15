@@ -46,51 +46,6 @@ p {
 
 
 
-/* Горизонтальное меню */
-
-.floats {
-	margin: 0 0 0 0; /* Компенсируем отступы между float-блоками, чтобы они занимали все доступное пространство */
-	text-transform: uppercase;
-	font-size: 13px;
-	letter-spacing: 0.1em;
-
-/* Эти правила для IE */
-	position: relative;
-	display: inline-block;
-	clear: both;
-}
-
-.floats:after {
-	content: '';
-	display: block;
-	clear: both;
-}
-
-.floats .left {
-	position: relative;
-	float: left;
-	display: inline; /* Убираем удвоение отступов в IE */
-	overflow: hidden; /* Прячем все, что вдруг вылезло за наши ограничения */
-	margin: 0 0 0 0; /* Отсупы между float-блоками */
-	width: 14em; /* Задаем минимальную ширину по тексту */
-	min-width: 0px; /* Задаем минимальную ширину по картинке */
-}
-
-.floats .left .r {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100%;
-}
-
-.floats .left .min {
-	margin: 0 0 0 0; /* Задаем минимальную высоту по картинке */
-	height: 2em; /* Задаем минимальную высоту по тексту */
-	width: 0px; /* Дублируем значение минимальной ширины по картинке для IE */
-}
-
-
-
 /* Подвал */
 
 .lineika {
