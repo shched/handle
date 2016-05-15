@@ -2,6 +2,47 @@
 	<title>Новости</title>
 </head>
 <body>
+	
+	<style type="text/css">
+.align_center
+{
+position: relative;
+width: 100%;
+}
+.align_center:after
+{
+content: '';
+display: block;
+clear: both;
+}
+.align_center_to_left
+{
+position: relative;
+right: 50%;
+float: right;
+}
+.align_center_to_right
+{
+position: relative;
+z-index: 1;
+right: -50%;
+}
+</style>
+<div class="align_center" style="border: 1px dashed red; color: red;">
+Выравниваем относительно этого блока.
+    <div class="align_center_to_left">
+        <div class="align_center_to_right" style="margin: 1em 0; border: 1px dashed green; color: green;">
+            Ширина блока зависит от&nbsp;размера надписи.
+        </div>
+    </div>
+</div>
+	
+	
+	
+	
+	
+	
+	
 	<div id="page-wrap">
 		<div id="page">
 			<div class="column column1" id="content">
