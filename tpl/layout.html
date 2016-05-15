@@ -15,68 +15,56 @@
 			</style>
 		<![endif]-->
 	</head>
-<body>
-	<div class="fig">
-		<a href="/">
-			<img src="/img/logo.png" alt="logo" width="50%" />
-		</a>
-	</div>
-	
-
-	
-	
-	<div style="clear:both;">
-</div>
-<style>
-nav a {
-  display: inline-block;
-  width: 16.66%; /* 6 пунктов меню, то есть 100%/6 */
-  background: rgb(46,95,122); /* фон пунктов меню */
-  text-decoration: none;
-}
-nav a:hover {
-  background: rgb(96,145,172); /* фон пунктов при наведении */
-}
-nav a, nav:before {
-  height: 30px;
-  line-height: 30px; /* высота пунктов меню, line-height = height */
-  color: #fff;
-  text-align: center;
-  cursor: pointer; /* курсор в виде руки, обязательно для Opera Mini */
-}
-
-@media (max-width: 800px) { /* для экранов, меньше 500px, см. про адаптивную вёрстку */
-  nav {
-    position: relative;
-    z-index: 500;
-  }
-  nav:before {
-    content: "Меню";
-    display: block;
-    background: rgb(6,55,82); /* цвет фона кнопки */
-  }
-  nav div {
-    display: none;
-    position: absolute; /* меню находится поверх контента */
-    left: 0;
-    right: 0;
-  }
-  nav a {
-    width: 100%; /* пункт меню растягивается на всю ширину блока */
-  }
-}
-</style>
-
-
-<nav>
-<div><a href="/news">Новости</a><a href="/history">История кафедры</a><a href="/abit">Поступающим</a><a href="/stud">Студентам</a><a href="/links">Ссылки</a><a href="/about">Контакты</a>
-</div>
-</nav>
-	
-	
-	
-	
-	
-	<%=body%>
-</body>
+	<body>
+		<div class="fig">
+			<a href="/">
+				<img src="/img/logo.png" alt="logo" width="45%" />
+			</a>
+		</div>
+		<div style="clear:both;">
+		</div>
+		<style>
+			nav a {
+				display: inline-block;
+				width: 16.66%; /* 6 пунктов меню, то есть 100%/6 */
+				background: rgb(46,95,122); /* фон пунктов меню */
+				text-decoration: none;
+			}
+			nav a:hover {
+				background: rgb(96,145,172); /* фон пунктов при наведении */
+			}
+			nav a, nav:before {
+				height: 30px;
+				line-height: 30px; /* высота пунктов меню, line-height = height */
+				color: #ffffff;
+				text-align: center;
+				cursor: pointer; /* курсор в виде руки, обязательно для Opera Mini */
+			}
+			@media (max-width: 800px) { /* для экранов, меньше 500px, см. про адаптивную вёрстку */
+				nav {
+					position: relative;
+					z-index: 500;
+				}
+					nav:before {
+					content: "Меню";
+					display: block;
+					background: rgb(6,55,82); /* цвет фона кнопки */
+				}
+				nav div {
+					display: none;
+					position: absolute; /* меню находится поверх контента */
+					left: 0;
+					right: 0;
+				}
+				nav a {
+					width: 100%; /* пункт меню растягивается на всю ширину блока */
+				}
+			}
+		</style>
+		<nav>
+			<div><a href="/news">Новости</a><a href="/history">История кафедры</a><a href="/abit">Поступающим</a><a href="/stud">Студентам</a><a href="/links">Ссылки</a><a href="/about">Контакты</a>
+			</div>
+		</nav>
+		<%=body%>
+	</body>
 </html>
